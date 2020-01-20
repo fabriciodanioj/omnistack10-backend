@@ -17,7 +17,7 @@ const DevSchema = new Schema(
     techs: [String],
     location: {
       type: PointSchema,
-      index: '2dsphere',
+      index: { loc: '2dsphere' },
     },
   },
   {
